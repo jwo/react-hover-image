@@ -1,0 +1,80 @@
+# React Hover Image
+
+![travis-status](https://img.shields.io/travis/jwo/react-hover-image.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d749dc7ef0b1d094deb2/maintainability)](https://codeclimate.com/github/jwo/react-hover-image/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d749dc7ef0b1d094deb2/test_coverage)](https://codeclimate.com/github/jwo/react-hover-image/test_coverage)
+
+## Description
+
+A React Component for an image, which changes its source when mouse hovered.
+
+## Usage
+
+1. Add to your React project:
+
+`yarn add react-hover-image`
+
+2. Import and use
+
+```
+import React from "react"
+import HoverImage from "react-hover-image"
+import yourFile from './images/yourFile.svg`
+import yourFileHover from './images/yourFile-hover.svg`
+
+class YourComponent extends React.Component {
+  render(){
+    return (
+      <div>
+        <h2>Oh Hai!</h2>
+        <HoverImage
+          src={yourFile}
+          hoverSrc={yourFileHover}
+        />
+      </div>
+    )
+  }
+}
+```
+
+
+### Other props you can use
+
+* **src** : Default image source
+* **hoverSrc** : On hover, show this
+* **onClick** : function to invoke when the image is clicked
+* **disabled** : You can disable clicks
+* **style** : Style props to pass to the `img`
+
+### Tips:
+
+* If using webpack, use `image-loader` to load your images into a data-url and
+  get semi-instant response times on your hover
+
+### Why should I use this?
+
+I was working on a project where client wanted to use graphic buttons for
+instead of CSS buttons. This is extracted from that project.
+
+## LICENSE
+
+The MIT License
+
+Copyright 2017 Jesse Wolgamott
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

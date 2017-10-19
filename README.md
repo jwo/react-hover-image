@@ -2,7 +2,7 @@
 
 ![travis-status](https://img.shields.io/travis/jwo/react-hover-image.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d749dc7ef0b1d094deb2/maintainability)](https://codeclimate.com/github/jwo/react-hover-image/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d749dc7ef0b1d094deb2/test_coverage)](https://codeclimate.com/github/jwo/react-hover-image/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/jwo/react-hover-image/badge.svg?branch=master)](https://coveralls.io/github/jwo/react-hover-image?branch=master)
 
 ## Description
 

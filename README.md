@@ -16,7 +16,7 @@ A React Component for an image, which changes its source when mouse hovered.
 
 2. Import and use
 
-```
+```js
 import React from "react"
 import HoverImage from "react-hover-image"
 import yourFile from "./images/yourFile.svg"

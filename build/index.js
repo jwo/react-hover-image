@@ -448,7 +448,8 @@ module.exports = warning;
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(6);
+__webpack_require__(6);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
@@ -1350,6 +1351,12 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (7:4)\nYou may need an appropriate loader to handle this file type.\n| const App = props => {\n|   return (\n|     <div>\n|       <h1>Demo!</h1>\n|       <ol>");
 
 /***/ })
 /******/ ]);

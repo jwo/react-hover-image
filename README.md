@@ -8,6 +8,8 @@
 
 A React Component for an image, which changes its source when mouse hovered.
 
+[View Demo](http://jessewolgamott.com/react-hover-image/)
+
 ## Usage
 
 1. Add to your React project:

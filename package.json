@@ -1,6 +1,6 @@
 {
   "name": "react-hover-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hover Image React Component",
   "main": "build/index.js",
   "repository": "https://github.com/jwo/react-hover-image",

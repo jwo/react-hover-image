@@ -527,7 +527,8 @@ var HoverImage = function (_React$Component) {
 
 HoverImage.propTypes = {
   hoverSrc: _propTypes2.default.string.isRequired,
-  src: _propTypes2.default.string.isRequired
+  src: _propTypes2.default.string.isRequired,
+  className: _propTypes2.default.string
 };
 
 exports.default = HoverImage;

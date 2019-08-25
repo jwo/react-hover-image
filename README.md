@@ -45,6 +45,7 @@ class YourComponent extends React.Component {
 * **onClick** : function to invoke when the image is clicked
 * **disabled** : You can disable clicks
 * **style** : Style props to pass to the `img`
+* **className** : CSS class name to pass to the `img`
 
 ### Tips:
 

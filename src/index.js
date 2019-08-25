@@ -32,6 +32,7 @@ class HoverImage extends React.Component {
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOut}
         onClick={this.handleClick}
+        className={this.props.className}
       />
     )
   }

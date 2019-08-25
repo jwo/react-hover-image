@@ -39,7 +39,8 @@ class HoverImage extends React.Component {
 }
 HoverImage.propTypes = {
   hoverSrc: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired
-}
+  src: PropTypes.string.isRequired,
+  className: PropTypes.string
+};
 
 export default HoverImage

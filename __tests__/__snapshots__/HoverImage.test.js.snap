@@ -22,6 +22,7 @@ ShallowWrapper {
     "key": null,
     "nodeType": "host",
     "props": Object {
+      "className": undefined,
       "onClick": [Function],
       "onMouseOut": [Function],
       "onMouseOver": [Function],
@@ -38,6 +39,7 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
+        "className": undefined,
         "onClick": [Function],
         "onMouseOut": [Function],
         "onMouseOver": [Function],

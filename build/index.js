@@ -516,7 +516,8 @@ var HoverImage = function (_React$Component) {
         style: this.props.style,
         onMouseOver: this.mouseOver,
         onMouseOut: this.mouseOut,
-        onClick: this.handleClick
+        onClick: this.handleClick,
+        className: this.props.className
       });
     }
   }]);

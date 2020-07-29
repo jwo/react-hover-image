@@ -1,3 +1,7 @@
+# 2.0.0
+* Converted to Typescript
+* devonly: Converted to microbundle
+
 # 1.0.1
 * Added className as prop for underlying image
 

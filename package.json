@@ -1,10 +1,13 @@
 {
   "name": "react-hover-image",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Hover Image React Component",
   "source": "src/index.tsx",
   "main": "build/index.js",
   "types": "build/index.d.js",
+  "files": [
+    "build/*"
+  ],
   "repository": "https://github.com/jwo/react-hover-image",
   "author": "Jesse Wolgamott",
   "license": "MIT",

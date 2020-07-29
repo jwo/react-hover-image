@@ -17,39 +17,54 @@ A React Component for an image, which changes its source when mouse hovered.
 2. Import and use
 
 ```js
-import React from "react"
-import HoverImage from "react-hover-image"
-import yourFile from "./images/yourFile.svg"
-import yourFileHover from "./images/yourFile-hover.svg"
+import React from "react";
+import HoverImage from "react-hover-image";
+import yourFile from "./images/yourFile.svg";
+import yourFileHover from "./images/yourFile-hover.svg";
 
-class YourComponent extends React.Component {
-  render(){
-    return (
-      <div>
-        <h2>Oh Hai!</h2>
-        <HoverImage
-          src={yourFile}
-          hoverSrc={yourFileHover}
-        />
-      </div>
-    )
-  }
-}
+const YourComponent: React.SFC = () => {
+  return (
+    <div>
+      <h2>Oh Hai!</h2>
+      <HoverImage src={yourFile} hoverSrc={yourFileHover} />
+    </div>
+  );
+};
 ```
 
+### Props
 
-### Other props you can use
+`src` and `hoverSrc` are the only required props.
 
-* **src** : Default image source
-* **hoverSrc** : On hover, show this
-* **onClick** : function to invoke when the image is clicked
-* **disabled** : You can disable clicks
-* **style** : Style props to pass to the `img`
-* **className** : CSS class name to pass to the `img`
+- **src** : Default image source
+- **hoverSrc** : On hover, show this
+- **onClick** : function to invoke when the image is clicked
+- **disabled** : You can disable clicks
+- **style** : Style props to pass to the `img`
+- **className** : CSS class name to pass to the `img`
+
+```ts
+export type HoverImageProps = {
+  src: string;
+  hoverSrc: string;
+  disabled?: boolean;
+  className?: string;
+  style?: any;
+  onClick?: React.MouseEventHandler;
+};
+```
+
+### Typescript
+
+We publish types at `index.d.ts` with version 2.0.
+
+### Demos
+
+You can view a running storybook at http://jessewolgamott.com/react-hover-image/ or you can download and run `yarn storybook`
 
 ### Tips:
 
-* If using webpack, use `image-loader` to load your images into a data-url and
+- If using webpack, use `image-loader` to load your images into a data-url and
   get semi-instant response times on your hover
 
 ### Why should I use this?

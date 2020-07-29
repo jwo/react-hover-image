@@ -15,7 +15,8 @@
     "start": "microbundle --jsx React.createElement --watch",
     "build": "microbundle --jsx React.createElement",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "peerDependencies": {
     "react": "^16.13",

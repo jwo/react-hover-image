@@ -1,2 +1,4 @@
 exclude_paths:
   - "build/"
+exclude_patterns:
+  - "__tests__/"

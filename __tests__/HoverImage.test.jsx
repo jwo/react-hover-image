@@ -5,16 +5,17 @@ Enzyme.configure({ adapter: new Adapter() });
 
 import HoverImage from "../src";
 
-const EXPECTED_ELEMENT = (
-  <HoverImage src={"/img/first.png"} hoverSrc={"/img/first-hover.png"} />
-);
 test("Displays initial src image", () => {
-  const wrapper = mount(EXPECTED_ELEMENT);
+  const wrapper = mount(
+    <HoverImage src={"/img/first.png"} hoverSrc={"/img/first-hover.png"} />
+  );
   expect(wrapper.state().src).toBe("/img/first.png");
 });
 
 test("Changes to hoverSrc on mouseOver", () => {
-  const wrapper = mount(EXPECTED_ELEMENT);
+  const wrapper = mount(
+    <HoverImage src={"/img/first.png"} hoverSrc={"/img/first-hover.png"} />
+  );
   wrapper.find("img").simulate("mouseover");
   expect(wrapper.state().src).toBe("/img/first-hover.png");
 });
@@ -51,7 +52,9 @@ test("When given an onClick, it does not get called when disabled", () => {
 });
 
 test("No errors if click, but no onClick provided", () => {
-  const wrapper = shallow(EXPECTED_ELEMENT);
+  const wrapper = shallow(
+    <HoverImage src={"/img/first.png"} hoverSrc={"/img/first-hover.png"} />
+  );
   expect(() => {
     wrapper.find("img").simulate("click");
   }).not.toThrowError();

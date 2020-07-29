@@ -2,8 +2,9 @@
   "name": "react-hover-image",
   "version": "1.0.1",
   "description": "Hover Image React Component",
-  "source": "src/index.js",
+  "source": "src/index.tsx",
   "main": "build/index.js",
+  "types": "build/index.d.js",
   "repository": "https://github.com/jwo/react-hover-image",
   "author": "Jesse Wolgamott",
   "license": "MIT",
@@ -11,28 +12,46 @@
   "scripts": {
     "test": "jest",
     "test-ci": "node  node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "start": "microbundle --watch",
-    "build": "microbundle"
+    "start": "microbundle --jsx React.createElement --watch",
+    "build": "microbundle --jsx React.createElement"
   },
   "peerDependencies": {
-    "react": "^16.3",
-    "react-dom": "^16.3"
+    "react": "^16.13",
+    "react-dom": "^16.13"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.7",
+    "@types/react": "^16.9.43",
     "coveralls": "^3.0.0",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^26.1.0",
     "microbundle": "^0.12.3",
     "raf": "^3.4.0",
-    "react": "^16",
-    "react-dom": "^16",
-    "react-test-renderer": "^16.13.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   },
-  "dependencies": {
-    "prop-types": "^15.6.0"
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "setupFiles": [
+      "raf/polyfill"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
   }
 }
